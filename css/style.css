@@ -614,3 +614,15 @@ footer .botton-footer {
   background-color: #3d3c3c;
   border-radius: 8px;
 }/*--- SCROLL BAR ---*/
+
+/*ESCONDENDO OS ITENS PARA APLICAR O EFEITO DO SCROLL REVEAL NO JAVA SCRIPT*/
+.efeito-txt-hero,
+.efeito-txt-sobre,
+.efeito-img-sobre,
+.efeito-txt-itens,
+.efeito-img-itens,
+.efeito-txt-itens,
+.efeito-img-itens,
+.efeito-txt-social{
+  visibility: hidden;
+}
