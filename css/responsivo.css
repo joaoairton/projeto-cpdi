@@ -1,0 +1,151 @@
+@media screen and (max-width: 1070px) {
+    header .menu-desktop{
+        display: none;
+    }
+
+    header .btn-menu-mob{
+      display: block;
+    }
+}
+
+@media screen and (max-width: 900px){
+    /*Responsivo do hero*/
+    .hero-site .txt-hero h1 {
+        font-size: 2.5em;
+        line-height: 40px;
+      }
+      
+      .hero-site .txt-hero p {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      
+      .hero-site .txt-hero p span {
+        display: inline;
+      }
+      
+      .hero-site button {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      /*Responsivo do Sobre*/
+      section.sobre {
+        padding: 10px;
+      }
+
+      .sobre .itens-sobre {
+        flex-direction: column;
+      }
+      
+      .sobre .itens-sobre .img-sobre img {
+        width: 100%;
+      }
+
+      .sobre .itens-sobre .txt-sobre p{
+        margin-bottom: 30px;
+      }
+      
+      .sobre .itens-sobre .txt-sobre h3 {
+        font-size: 2em;
+        line-height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+      }/*Fim do responsivo do Sobre*/
+
+      /*Responsivo das Vantagens*/
+      section.vantagens {
+        padding: 10px;
+      }
+
+      .vantagens .itens-container {
+        flex-direction: column;
+      }
+      
+      .vantagens .itens-container .img-itens img {
+        max-width: 100%;
+      }
+
+      .vantagens .itens-container .txt-itens p{
+        margin-bottom: 20px;
+      }
+      
+      .vantagens .itens-container .txt-itens h3 {
+        font-size: 2em;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+
+      .vantagens .itens-container .item-1{
+        order: 1;
+      }
+
+      .vantagens .itens-container .item-2{
+        order: 0;
+      } /*Fim do responsivo das Vantagens*/
+
+      /*Responsivo do Social*/
+      section.social{
+        padding: 10px;
+      }
+      
+      .social .itens-social {
+        flex-direction: column;
+      }
+    
+      .social .itens-social .txt-social h3 {
+        font-size: 2em;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }/*Fim do responsivo do Social*/
+      
+      /*Responsivo do Paralax*/
+      .paralax h3 {
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 40px;
+      }
+      
+      .paralax p {
+        font-size: 15px;
+      }/*Fim do responsivo do Paralax*/
+
+      /*Responsivo da sessão contato*/
+      section.contato {
+        padding: 10px;
+      }
+      
+      .contato .interface {
+        flex-direction: column;
+      }
+      
+      .contato .interface img {
+        display: none;
+      }
+      
+      .txt-contato {
+         text-align: center;
+         margin-bottom: 30px;
+      }
+
+      .txt-contato p {
+        text-align: justify;
+      }
+      
+      button[type="submit"] {
+        font-size: 1em;
+      }/*Fim do responsivo da sessão contato*/
+      
+      /*Responsivo do Footer*/
+      footer .top-footer button {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+      }
+      
+      footer .botton-footer p {
+        font-size: 15px;
+      } /*Fim do responsivo do Footer*/
+ 
+}
+

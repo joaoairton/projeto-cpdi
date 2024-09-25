@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+section{
+  scroll-margin-top: 80px;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+header .btn-contato button,
+.hero-site button,
+.icons-contato button {
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+  width: 100%;
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+header .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo .logo-branca {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+header .logo .logo-preta {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 800;
+  color: #000000;
+}
+
+/*ESTILO DO MENU-DINÂMICO*/
+header .logo a.logo-preta {
+  display: none;
+}
+
+header.rolar {
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 0 8px #00000060;
+}
+
+header.rolar .menu-desktop nav ul li a {
+  color: #000000;
+}
+
+header.rolar .logo .logo-branca {
+  display: none;
+}
+
+header.rolar .logo .logo-preta {
+  display: block;
+}
+/*FIM DO ESTILO DO MENU-DINÂMICO*/
+
+header .menu-desktop nav ul {
+  list-style-type: none;
+}
+
+.menu-desktop nav ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.menu-desktop nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block; /*Necessário para poder aplicar efeitos nos links do menu*/
+  transition: 0.1s;
+  font-size: 1rem;
+}
+
+.menu-desktop nav a:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+header .btn-contato button:hover,
+.hero-site button:hover,
+.icons-contato button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*ESTILO DO BOTÃO DO MENU MOBILE*/
+header .btn-menu-mob{
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+header .btn-menu-mob div{
+  background-color: #ffffff;
+  height: 3px;
+  margin: 10px 0;
+  transition: .2s;
+}
+
+header .btn-menu-mob .line-menu-mob-1{
+  width: 30px;
+}
+
+header .btn-menu-mob .line-menu-mob-1{
+  width: 30px;
+}
+
+header.rolar .btn-menu-mob div{
+  background-color: #000000;
+}
+
+header .btn-menu-mob .line-menu-mob-1.ativo1{
+  transform: rotate(45deg) translate(30%);
+  background-color: #ffffff;
+}
+
+header .btn-menu-mob .line-menu-mob-2.ativo2{
+  transform: rotate(-45deg) translate(30%);
+  background-color: #ffffff;
+}/*ESTILO DO BOTÃO DO MENU MOBILE*/
+
+/*ESTILO MENU MOBILE*/
+header .menu-mobile{
+  width: 0;
+  height: 0;
+  background-color: #2B2B2B;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  overflow: hidden;
+  transition: .3s;
+}
+
+header .menu-mobile nav{
+  width: 100%;
+}
+
+header .menu-mobile nav ul{
+  list-style-type: none;
+}
+
+header .menu-mobile nav a{
+  font-size: 24px;
+  text-decoration: none;
+  padding: 20px 0;
+  display: block;
+  color: #ffffff;
+  transition: .2s;
+}
+
+header .menu-mobile.abrir{
+  width: 100%;
+  height: 100vh;
+}
+
+body.no-overflow{
+  overflow: hidden; /*Trava a rolagem da tela quando o menu está aberto*/
+}
+/* FIM DO ESTILO DO CABEÇALHO */
+
+/* ESTILO DO TOPO DO SITE */
+section.hero-site {
+  height: 100vh;
+  background-image: url(../images/bg-home1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /*Preenche todo o espaço da section com a imagem*/
+  background-position: center;
+  color: #000000;
+}
+
+.hero-site .interface {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+  font-size: 4em;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+.hero-site .txt-hero h1 span {
+  display: block; /*Quebra a linha do que está dentro do span*/
+  font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.hero-site .txt-hero p span {
+  display: block;
+}
+
+.hero-site button {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* ESTILO DO TOPO DO SITE */
+
+/* ESTILO DO SOBRE */
+section.sobre {
+  padding: 60px;
+  background-color: #779999;
+}
+
+.sobre .itens-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8%;
+  margin-bottom: 60px;
+}
+
+.sobre .itens-sobre .img-sobre img {
+  max-width: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.itens-sobre .img-sobre img:hover {
+  transform: scale(1.02);
+}
+
+.sobre .itens-sobre .txt-sobre h3 {
+  font-size: 3em;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.itens-sobre .txt-sobre p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+/* ESTILO DO SOBRE */
+
+/* ESTILO DAS VANTAGENS */
+section.vantagens {
+  padding: 80px;
+}
+
+.vantagens .itens-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8%;
+  margin-bottom: 60px;
+}
+
+.vantagens .itens-container .img-itens img {
+  max-width: 600px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.itens-container .img-itens img:hover {
+  transform: scale(1.02);
+}
+
+.vantagens .itens-container .txt-itens h3 {
+  font-size: 3em;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.itens-container .txt-itens h3 span {
+  font-weight: 300;
+}
+
+.itens-container .txt-itens p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+/* FIM ESTILO DAS VANTAGENS */
+
+/* ESTILO DO SOCIAL */
+section.social {
+  padding: 60px;
+  background-color: #779999;
+}
+
+.social .itens-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8%;
+  margin-bottom: 60px;
+}
+
+.social .itens-social .img-social img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* .itens-social .img-social img:hover {
+  transform: scale(1.02);
+} */
+
+.social .itens-social .txt-social h3 {
+  font-size: 3em;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.itens-social .txt-social p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.btn-social {
+  font-size: 20px;
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid #1f1f1f;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+
+}
+
+.txt-social{
+  width: 100%;
+}
+
+.btn-social:hover {
+  color: #f5f5f5;
+  background-color: #1f1f1f;
+  transition: 0.3s;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  list-style: none;
+  border-radius: 10px;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-btn:focus {
+  outline: none;
+}
+/* ESTILO DO SOCIAL */
+
+/* ESTILO DO EFEITO PARALAX */
+section.paralax {
+  height: 500px;
+  background-image: url(../images/background-paralax.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*Fixa a imagem atrás do texto*/
+
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+}
+
+.paralax > .overlay {
+  /*Adiciona o degradê escuro sobre a imagem*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000c5;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.paralax > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+}
+
+.paralax h3 {
+  font-size: 3em;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.paralax h3 span {
+  display: block;
+  font-weight: 800;
+}
+
+.paralax p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.paralax button {
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+}
+/* ESTILO DO EFEITO PARALAX */
+
+/* ESTILO DA SESSÃO CONTATO */
+section.contato {
+  background-color: #779999;
+  padding: 80px 0;
+}
+
+.contato .interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contato .interface img {
+  max-width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.txt-contato,
+.form-contato {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.txt-contato {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.form-contato {
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 1.2em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #0c4b8f;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+button[type="submit"]:hover {
+  background-color: #e74040;
+}
+
+.contato .txt-contato h3 {
+  font-size: 2.5em;
+  line-height: 50px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span {
+  display: block;
+  font-weight: 800;
+}
+
+.contato .txt-contato p {
+  font-size: 1.2em;
+}
+/* FIM ESTILO DA SESSÃO CONTATO */
+
+/* ESTILO DO FOOTER */
+footer {
+  background-color: #2b2b2b;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer .top-footer a {
+  text-decoration: none;
+}
+
+footer .top-footer button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+footer .top-footer button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+footer .botton-footer p {
+  color: #ffffff;
+  font-family: "Courier New";
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+footer .botton-footer {
+  border-top: 1px solid #ffffff;
+  margin: 20px;
+}/* ESTILO DO FOOTER */
+
+/*--- SCROLL BAR ---*/
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #3d3c3c;
+  border-radius: 8px;
+}/*--- SCROLL BAR ---*/
